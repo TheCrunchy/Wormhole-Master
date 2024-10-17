@@ -612,7 +612,7 @@ namespace Wormhole
                 Utilities.KillCharacters(myIdentity.SavedCharacters);
                 myIdentity.ChangeCharacter(character);
 
-                cockpit.AttachPilot(character, false, false, true);
+                cockpit.AttachPilot(character, 1,false, false, true);
 
                 if (!Sync.Players.TryGetPlayerId(identity, out var playerId) || !Sync.Players.TryGetPlayerById(playerId, out var player))
                     continue;
